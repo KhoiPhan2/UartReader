@@ -1,4 +1,4 @@
-blink_led
+UART reader
 =========
 
 Rust project for the _Arduino Mega 2560_.
