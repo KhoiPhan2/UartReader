@@ -1,7 +1,7 @@
 UART reader
 =========
 
-Rust project for the _Arduino Mega 2560_.
+Rust project for the _Arduino Mega 2560_. reads messages from the serial console using a circular buffer
 
 ## Build Instructions
 1. Install prerequisites as described in the [`avr-hal` README] (`avr-gcc`, `avr-libc`, `avrdude`, [`ravedude`]).
