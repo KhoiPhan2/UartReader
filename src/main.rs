@@ -4,7 +4,7 @@
 use arduino_hal::prelude::*;
 use panic_halt as _;
 
-#[arduino_hal::entry]  // This tells the linker this is the entry point
+#[arduino_hal::entry]  
 fn main() -> ! {
     let dp = arduino_hal::Peripherals::take().unwrap();
     let pins = arduino_hal::pins!(dp);
@@ -42,7 +42,6 @@ fn process_uart_byte(byte: u8) {
     }
 }
 
-// Your CircularBuffer code stays the same...
 struct CircularBuffer<T, const N: usize> {
     buffer: [Option<T>; N],
     read_index: usize,
